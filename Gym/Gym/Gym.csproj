@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A30F3E99-1A29-4835-82F0-D5C65F5DEFE1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Gym</RootNamespace>
+    <AssemblyName>Gym</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=14.1.0.37, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BarCodeCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmd.Designer.cs">
+      <DependentUpon>frmd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmmessag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmessag.Designer.cs">
+      <DependentUpon>frmmessag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmsabtename.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmsabtename.Designer.cs">
+      <DependentUpon>Frmsabtename.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmsavabegh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsavabegh.Designer.cs">
+      <DependentUpon>frmsavabegh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmuseedit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmuseedit.Designer.cs">
+      <DependentUpon>frmuseedit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmvrod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmvrod.Designer.cs">
+      <DependentUpon>frmvrod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="modiriat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modiriat.Designer.cs">
+      <DependentUpon>modiriat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pardakht.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pardakht.Designer.cs">
+      <DependentUpon>pardakht.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tblKomod.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblTarakonesh.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblUser.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmd.resx">
+      <DependentUpon>frmd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmessag.resx">
+      <DependentUpon>frmmessag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmsabtename.resx">
+      <DependentUpon>Frmsabtename.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsavabegh.resx">
+      <DependentUpon>frmsavabegh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmuseedit.resx">
+      <DependentUpon>frmuseedit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmvrod.resx">
+      <DependentUpon>frmvrod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modiriat.resx">
+      <DependentUpon>modiriat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pardakht.resx">
+      <DependentUpon>pardakht.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EntityDeploy Include="Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thin-0092_file_profile_user_personal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thin-0010_newspaper_reading_news.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thin-0106_clipboard_box_archive_documents.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thin-0006_book_writing_reading_read_manual.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thin-0415_saving_sale_discount_piggy_bank_pig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thin-0054_settings_tools_configuration_preferences.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thin-0403_money_usa_dollar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thin-0359_server_hosting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thin-0576_door_exit_emergency_logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thin-0001_compose_write_pencil_new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <Content Include="Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+    <None Include="Resources\thin-0010_newspaper_reading_news1.png" />
+    <None Include="Resources\thin-0154_ok_successful_check.png" />
+    <None Include="Resources\thin-0060_error_warning_danger_stop_delete_exit.png" />
+    <None Include="Resources\thin-0663_like_thumb_up_vote.png" />
+    <None Include="Resources\thin-0718_user_profile_successful_check_verified.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

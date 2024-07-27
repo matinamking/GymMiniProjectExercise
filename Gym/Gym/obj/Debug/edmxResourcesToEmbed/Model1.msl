@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DBGymModelStoreContainer" CdmEntityContainer="DBGymEntities">
+    <EntitySetMapping Name="tblKomods">
+      <EntityTypeMapping TypeName="DBGymModel.tblKomod">
+        <MappingFragment StoreEntitySet="tblKomod">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="KomodNum" ColumnName="KomodNum" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Customer" ColumnName="Customer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTarakoneshes">
+      <EntityTypeMapping TypeName="DBGymModel.tblTarakonesh">
+        <MappingFragment StoreEntitySet="tblTarakonesh">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TarakoneshDate" ColumnName="TarakoneshDate" />
+          <ScalarProperty Name="TarakoneshKind" ColumnName="TarakoneshKind" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblUsers">
+      <EntityTypeMapping TypeName="DBGymModel.tblUser">
+        <MappingFragment StoreEntitySet="tblUser">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+          <ScalarProperty Name="OzviatDate" ColumnName="OzviatDate" />
+          <ScalarProperty Name="EtebarDate" ColumnName="EtebarDate" />
+          <ScalarProperty Name="Komod" ColumnName="Komod" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl" Alias="Self" Namespace="DBGymModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012">
+  <EntityType Name="tblKomod">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="KomodNum" Nullable="false" Type="int" />
+    <Property Name="State" Nullable="false" MaxLength="50" Type="nvarchar" />
+    <Property Name="Customer" Nullable="false" MaxLength="50" Type="nvarchar" />
+  </EntityType>
+  <EntityType Name="tblTarakonesh">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="TarakoneshDate" Nullable="false" MaxLength="50" Type="nvarchar" />
+    <Property Name="TarakoneshKind" Nullable="false" MaxLength="50" Type="nvarchar" />
+    <Property Name="CustomerID" Nullable="false" Type="int" />
+    <Property Name="CustomerName" Nullable="false" MaxLength="50" Type="nvarchar" />
+    <Property Name="Price" Nullable="false" MaxLength="50" Type="nvarchar" />
+  </EntityType>
+  <EntityType Name="tblUser">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="Name" Nullable="false" MaxLength="50" Type="nvarchar" />
+    <Property Name="BirthDate" Nullable="false" MaxLength="50" Type="nvarchar" />
+    <Property Name="OzviatDate" Nullable="false" MaxLength="50" Type="nvarchar" />
+    <Property Name="EtebarDate" Nullable="false" MaxLength="50" Type="nvarchar" />
+    <Property Name="Komod" Nullable="false" MaxLength="50" Type="nvarchar" />
+  </EntityType>
+  <EntityContainer Name="DBGymModelStoreContainer">
+    <EntitySet Name="tblKomod" EntityType="Self.tblKomod" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblTarakonesh" EntityType="Self.tblTarakonesh" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblUser" EntityType="Self.tblUser" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
